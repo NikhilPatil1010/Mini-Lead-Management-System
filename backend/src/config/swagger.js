@@ -9,9 +9,9 @@ const options = {
       version: '1.0.0',
       description: 'API documentation for the Mini Lead Management System',
     },
-    servers: [
-      { url: `http://localhost:${config.port}`, description: 'Development' },
-    ],
+    // 'servers' is intentionally omitted here. 
+    // By omitting it, OpenAPI defaults to the current host URL ("/")
+    // This allows Swagger UI to work seamlessly on localhost, ngrok, or production servers!
     components: {
       securitySchemes: {
         bearerAuth: {
